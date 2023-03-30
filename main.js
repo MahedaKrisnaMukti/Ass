@@ -6,9 +6,16 @@ function process_argv() {
 }
 
 function studentStatus(name, studentId) {
-  // kode program studi
-  const studyProgramCode = studentId.substring(4, 6);
+  // * Mencari nomor urut mahasiswa
+  const studentNumber = studentId.substring(studentId.length - 4);
+
+  // * Mencari program studi
   let studyProgramName;
+  const studyProgramCode = studentId.substring(
+    studentId.length - 6,
+    studentId.length - 4
+  );
+
   switch (studyProgramCode) {
     case "21":
       studyProgramName = "Ekonomi";
@@ -47,9 +54,13 @@ function studentStatus(name, studentId) {
       studyProgramName = "";
   }
 
-  // kode fakultas
-  const facultyCode = studentId.substring(0, 2);
+  // * Mencari tahun terdaftar
+  const year = studentId.substring(studentId.length - 10, studentId.length - 6);
+
+  // * Mencari fakultas
+  const facultyCode = studentId.substring(0, studentId.length - 10);
   let facultyName;
+
   switch (facultyCode) {
     case "FE":
       facultyName = "Fakultas Ekonomi";
@@ -67,12 +78,9 @@ function studentStatus(name, studentId) {
       facultyName = "";
   }
 
-  // tahun terdaftar
-  const year = studentId.substring(2, 6);
+  let textResult = `Mahasiswa a.n ${name} terdaftar sebagai mahasiswa Program Studi ${studyProgramName} pada ${facultyName} sejak tahun ${year}.`;
 
-  console.log(
-    `Mahasiswa a.n ${name} terdaftar sebagai mahasiswa Program Studi ${studyProgramName} pada ${facultyName} sejak tahun ${year}.`
-  );
+  return textResult;
 }
 
 // Dilarang menghapus/mangganti code dibawah ini!!!

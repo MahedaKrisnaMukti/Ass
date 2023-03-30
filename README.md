@@ -21,35 +21,35 @@ _Function_ ini akan memproses _input_ yang diterima dari terminal dengan ketentu
 
 1. `studentId` memiliki format sebagai berikut:
 
-    ```txt
-    FE2022310004 -> FE 2022 31 0004
-    ```
+   ```txt
+   FE2022310004 -> FE 2022 31 0004
+   ```
 
-    - FE = kode fakultas
-    - 2022 = tahun student terdaftar
-    - 31 = kode program studi
-    - 0004 = nomor urut student
+   - FE = kode fakultas
+   - 2022 = tahun student terdaftar
+   - 31 = kode program studi
+   - 0004 = nomor urut student
 
 2. Diasumsikan terdapat beberapa kode fakultas yang dimiliki.
 
-    - `FE` = Untuk `Fakultas Ekonomi`
-    - `FISIP` = Untuk `Fakultas Ilmu Sosial dan Politik`
-    - `FT` = Untuk `Fakultas Teknik`
-    - `FTIS` = Untuk `Fakultas Teknologi Informasi dan Sains`
+   - `FE` = Untuk `Fakultas Ekonomi`
+   - `FISIP` = Untuk `Fakultas Ilmu Sosial dan Politik`
+   - `FT` = Untuk `Fakultas Teknik`
+   - `FTIS` = Untuk `Fakultas Teknologi Informasi dan Sains`
 
 3. Diasumsikan terdapat beberapa kode program studi yang dimiliki.
 
-    - `21` = Untuk program studi `Ekonomi`
-    - `22` = Untuk program studi `Manajemen`
-    - `23` = Untuk program studi `Akuntansi`
-    - `31` = Untuk program studi `Administrasi Publik`
-    - `32` = Untuk program studi `Administrasi Bisnis`
-    - `33` = Untuk program studi `Hubungan Internasional`
-    - `41` = Untuk program studi `Teknik Sipil`
-    - `42` = Untuk program studi `Arsitektur`
-    - `51` = Untuk program studi `Matematika`
-    - `52` = Untuk program studi `Fisika`
-    - `53` = Untuk program studi `Informatika`
+   - `21` = Untuk program studi `Ekonomi`
+   - `22` = Untuk program studi `Manajemen`
+   - `23` = Untuk program studi `Akuntansi`
+   - `31` = Untuk program studi `Administrasi Publik`
+   - `32` = Untuk program studi `Administrasi Bisnis`
+   - `33` = Untuk program studi `Hubungan Internasional`
+   - `41` = Untuk program studi `Teknik Sipil`
+   - `42` = Untuk program studi `Arsitektur`
+   - `51` = Untuk program studi `Matematika`
+   - `52` = Untuk program studi `Fisika`
+   - `53` = Untuk program studi `Informatika`
 
 Terdapat juga function `process_argv` yang akan menerima _input_ yang kalian masukan pada terminal.
 
